@@ -1,6 +1,10 @@
 # PawPal+ Project Reflection
 
 ## 1. System Design
+Actions user should be able to perform:
+- Add, edit, update their pet details
+- Add tasks and update them as completed or not
+- Create daily schedule
 
 **a. Initial design**
 
