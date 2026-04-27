@@ -151,3 +151,7 @@
 2026-04-27 16:14:17,861 | WARNING  | pawpal.guardrails | Medical red-flag detected (vomit) in input: 'Mochi was vomitting so we could not feed him Mochi (Shiba): dog, 3 years old, 2 tasks'
 2026-04-27 16:14:21,826 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
 2026-04-27 16:14:52,675 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:19:54,329 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:20:45,238 | INFO     | pawpal_system | Schedule generated: 5 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:21:24,138 | INFO     | pawpal_system | Schedule generated: 6 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:22:01,719 | INFO     | pawpal_system | Schedule generated: 7 tasks placed, 0 conflicts for owner 'Jordan'

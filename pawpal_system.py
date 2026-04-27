@@ -580,7 +580,33 @@ class Scheduler:
         for task in tasks:
             if task.is_completed:
                 continue
-            task_end = current_minute + task.duration_minutes
+            # If the task specifies an explicit `start_time`, use that (but do not
+            # schedule it before the owner's availability or the current cursor).
+            if task.start_time:
+                try:
+                    task_start = max(current_minute, _parse_time(task.start_time), _parse_time(self.owner.available_start))
+                except ValueError:
+                    task_start = current_minute
+            else:
+                # If the task has a preferred time of day, advance the cursor to
+                # the preferred slot start when appropriate. This prevents
+                # scheduling an "afternoon" task back-to-back in the morning.
+                if task.preferred_time:
+                    pref = task.preferred_time.lower()
+                    # base preferred slot times (minutes since midnight)
+                    pref_map = {
+                        "morning": _parse_time(self.owner.available_start),
+                        "afternoon": 12 * 60,
+                        "evening": 17 * 60,
+                    }
+                    pref_start = pref_map.get(pref, current_minute)
+                    # do not go earlier than the owner's availability
+                    pref_start = max(pref_start, _parse_time(self.owner.available_start))
+                    if current_minute < pref_start:
+                        current_minute = pref_start
+                task_start = current_minute
+
+            task_end = task_start + task.duration_minutes
             pet_of_task = next((p for p in self.owner.pets if task in p.tasks), None)
             pet_name = pet_of_task.name if pet_of_task else "unknown"
 
