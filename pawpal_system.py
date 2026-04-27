@@ -24,6 +24,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+from guardrails import check_for_medical_redflags, sanitize_text
+from evaluation import record_call
+
 # Suppress the google.generativeai deprecation warning
 warnings.filterwarnings('ignore', message='.*google.generativeai.*')
 
@@ -430,6 +433,13 @@ class Scheduler:
         (response_text, confidence_score)
             confidence_score is 0.0-1.0.
         """
+        # Short-circuit if the prompt contains medical red-flags (hard guardrail)
+        redflag_msg = check_for_medical_redflags((user_prompt or "") + " " + (rag_query or ""))
+        if redflag_msg:
+            logger.warning("Guardrail triggered: medical red-flag; short-circuiting LLM.")
+            record_call("guardrail_medical", redflag_msg, 1.0, fallback=False, extra={"trigger": "medical"})
+            return redflag_msg, 1.0
+
         retriever = _get_retriever()
         docs = retriever.retrieve(rag_query, species_filter=species_filter)
         context = retriever.format_context(docs)
@@ -445,6 +455,7 @@ class Scheduler:
 
         t0 = time.perf_counter()
         raw = ""
+        used_fallback = False
         default_confidence = _confidence_from_retrieval(docs)
         try:
             raw = _call_gemini(system_prompt, user_prompt)
@@ -467,13 +478,20 @@ class Scheduler:
             combined_prompt = f"{user_prompt}\n\nContext:\n{context}"
             response_text = _rule_based_fallback(combined_prompt)
             confidence = 0.4  # lower confidence for fallback
+            used_fallback = True
 
         if not response_text:
             response_text = _rule_based_fallback(user_prompt)
             confidence = 0.3
+            used_fallback = True
 
         self._last_confidence = confidence
         logger.info("LLM confidence score: %.2f", confidence)
+        # Record a compact evaluation/log entry for observability
+        try:
+            record_call("rag_llm", sanitize_text(response_text), confidence, fallback=used_fallback, extra={"rag_docs": len(docs)})
+        except Exception:
+            logger.exception("Failed to record evaluation entry")
         return response_text, confidence
 
     # ------------------------------------------------------------------

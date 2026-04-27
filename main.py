@@ -1,5 +1,9 @@
 from pawpal_system import Owner, Pet, Task, Scheduler
 
+# CLI-level guardrails and observability
+from guardrails import check_for_medical_redflags, sanitize_text
+from evaluation import record_call
+
 
 def main():
     owner = Owner(name="Jordan", available_start="07:00", available_end="19:00")
@@ -35,7 +39,12 @@ def main():
         )
 
     print("\nPlan explanation:\n")
-    print(scheduler.explain_plan())
+    plan_text = scheduler.explain_plan()
+    print(sanitize_text(plan_text))
+    try:
+        record_call("cli_generate_schedule", sanitize_text(plan_text, max_len=1000), scheduler._last_confidence or 0.0, fallback=False, extra={"placed": len(plan), "conflicts": len(conflicts)})
+    except Exception:
+        pass
 
     # Demonstrate new sorting and filtering helpers
     all_tasks = owner.get_all_tasks(include_completed=True)
@@ -56,9 +65,18 @@ def main():
     print("\nConflict detection:")
     if conflicts:
         for msg in conflicts:
-            print("  WARNING:", msg)
+            print("  WARNING:", sanitize_text(msg))
     else:
         print("  No conflicts detected.")
+
+    # Demonstrate pet tips retrieval with guardrail check
+    tips = scheduler.get_pet_tips(pet1)
+    red = check_for_medical_redflags(tips)
+    print("\nPet tips for", pet1.name)
+    if red:
+        print(sanitize_text(red))
+    else:
+        print(sanitize_text(tips))
 
 
 if __name__ == "__main__":
