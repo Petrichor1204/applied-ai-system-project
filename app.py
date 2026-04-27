@@ -83,30 +83,8 @@ if owner.pets:
 else:
     st.info("No pets yet. Add your first pet.")
 
-st.divider()
 
-st.subheader("Pet Care Tips")
-if owner.pets:
-    tip_pet = st.selectbox("Get tips for pet", [pet.name for pet in owner.pets], key="tip_pet")
-    if st.button("Get pet tips"):
-        selected_pet = owner.get_pet(tip_pet)
-        if selected_pet:
-            # Check for medical red-flags in the daily log or pet summary before calling LLM
-            combined = (daily_log or "") + " " + selected_pet.get_info()
-            red = check_for_medical_redflags(combined)
-            if red:
-                st.warning(red)
-                record_call("guardrail_medical_ui", sanitize_text(red), 1.0, fallback=False, extra={"pet": selected_pet.name})
-            else:
-                tips = scheduler.get_pet_tips(selected_pet, daily_log=daily_log if daily_log else None)
-                display = sanitize_text(tips, max_len=2000)
-                st.info(display)
-                try:
-                    record_call("ui_get_pet_tips", sanitize_text(display, max_len=1000), scheduler._last_confidence or 0.0, fallback=False, extra={"pet": selected_pet.name})
-                except Exception:
-                    st.error("Failed to record telemetry for this call.")
-else:
-    st.warning("Add a pet to get care tips.")
+# (Pet Care Tips moved below the Daily Log so it can use the actual user input)
 
 st.divider()
 
@@ -142,6 +120,29 @@ daily_log = st.text_area(
 
 st.divider()
 
+st.subheader("Pet Care Tips")
+if owner.pets:
+    tip_pet = st.selectbox("Get tips for pet", [pet.name for pet in owner.pets], key="tip_pet")
+    if st.button("Get pet tips"):
+        selected_pet = owner.get_pet(tip_pet)
+        if selected_pet:
+            # Check for medical red-flags in the daily log or pet summary before calling LLM
+            combined = (daily_log or "") + " " + selected_pet.get_info()
+            red = check_for_medical_redflags(combined)
+            if red:
+                st.warning(red)
+                record_call("guardrail_medical_ui", sanitize_text(red), 1.0, fallback=False, extra={"pet": selected_pet.name})
+            else:
+                tips = scheduler.get_pet_tips(selected_pet, daily_log=daily_log if daily_log else None)
+                display = sanitize_text(tips, max_len=2000)
+                st.info(display)
+                try:
+                    record_call("ui_get_pet_tips", sanitize_text(display, max_len=1000), scheduler._last_confidence or 0.0, fallback=False, extra={"pet": selected_pet.name})
+                except Exception:
+                    st.error("Failed to record telemetry for this call.")
+else:
+    st.warning("Add a pet to get care tips.")
+
 st.subheader("Build Schedule")
 if st.button("Generate schedule"):
     plan, conflicts = scheduler.generate_schedule(daily_log=daily_log if daily_log else None)
@@ -168,9 +169,15 @@ if st.button("Generate schedule"):
     if conflicts:
         st.warning("⚠️ Scheduling Conflicts Detected:")
         for conflict in conflicts:
-                st.warning(sanitize_text(conflict))
-            try:
-                record_call("generate_schedule", sanitize_text(scheduler.explain_plan(), max_len=1000), scheduler._last_confidence or 0.0, fallback=False, extra={"placed": len(plan), "conflicts": len(conflicts)})
-            except Exception:
-                st.error("Failed to record schedule telemetry.")
-        st.info("Tip: Consider adjusting task durations, priorities, or your available time window to fit more tasks.")
+            st.warning(sanitize_text(conflict))
+        try:
+            record_call(
+                "generate_schedule",
+                sanitize_text(scheduler.explain_plan(), max_len=1000),
+                scheduler._last_confidence or 0.0,
+                fallback=False,
+                extra={"placed": len(plan), "conflicts": len(conflicts)},
+            )
+        except Exception:
+            st.error("Failed to record schedule telemetry.")
+    st.info("Tip: Consider adjusting task durations, priorities, or your available time window to fit more tasks.")
