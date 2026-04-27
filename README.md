@@ -255,3 +255,5 @@ The biggest problem-solving lesson was that reliability comes from iteration. Ea
 ![PawPal+ demo screenshot 1](<Screenshot 2026-03-31 at 11.04.08 AM.png>)
 
 ![PawPal+ demo screenshot 2](<Screenshot 2026-03-31 at 11.04.20 AM.png>)
+
+## Loom link: https://www.loom.com/share/e69a41f2e5a54a5bacb6edc2d177856c

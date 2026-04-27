@@ -155,3 +155,61 @@
 2026-04-27 16:20:45,238 | INFO     | pawpal_system | Schedule generated: 5 tasks placed, 0 conflicts for owner 'Jordan'
 2026-04-27 16:21:24,138 | INFO     | pawpal_system | Schedule generated: 6 tasks placed, 0 conflicts for owner 'Jordan'
 2026-04-27 16:22:01,719 | INFO     | pawpal_system | Schedule generated: 7 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:27:28,726 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:27:55,653 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 16:27:55,653 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 16:28:00,739 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=5.08s | prompt_len=104 | rag_docs=3
+2026-04-27 16:28:00,739 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:30:36,050 | INFO     | pawpal_system | Schedule generated: 1 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:31:00,873 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:31:09,574 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 16:31:09,575 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 16:31:14,617 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=5.04s | prompt_len=104 | rag_docs=3
+2026-04-27 16:31:14,617 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:31:52,833 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 16:31:52,833 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 16:31:57,821 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.99s | prompt_len=96 | rag_docs=3
+2026-04-27 16:31:57,821 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:32:12,882 | INFO     | pawpal_system | Schedule generated: 1 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:33:06,532 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:33:37,651 | WARNING  | pawpal.guardrails | Medical red-flag detected (vomit) in input: 'Luna is sick and vomiting. What should I do?  Mochi (Shiba): dog, 3 years old, 1 tasks'
+2026-04-27 16:33:41,254 | WARNING  | pawpal.guardrails | Medical red-flag detected (vomit) in input: 'Luna is sick and vomiting. What should I do?  Luna (Domestic Short Hair): cat, 4 years old, 1 tasks'
+2026-04-27 16:33:58,815 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.74s | prompt_len=167 | rag_docs=3
+2026-04-27 16:33:58,815 | INFO     | pawpal_system | LLM confidence score: 0.83
+2026-04-27 16:34:33,224 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.38s | prompt_len=173 | rag_docs=3
+2026-04-27 16:34:33,226 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:36:52,061 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:39:39,122 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:40:04,555 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.67s | prompt_len=113 | rag_docs=3
+2026-04-27 16:40:04,556 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:40:25,425 | WARNING  | pawpal.guardrails | Medical red-flag detected (vomit) in input: 'Mochi is vomiting. Mochi (Shiba): dog, 3 years old, 2 tasks'
+2026-04-27 16:40:44,093 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:41:07,023 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:41:57,459 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:52:53,367 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:53:05,984 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:53:05,995 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 16:53:05,995 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 16:53:10,011 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.02s | prompt_len=104 | rag_docs=3
+2026-04-27 16:53:10,012 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:53:45,458 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:53:53,473 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:54:00,023 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=6.54s | prompt_len=194 | rag_docs=3
+2026-04-27 16:54:00,024 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:55:15,795 | INFO     | pawpal_system | Schedule generated: 1 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:55:24,458 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 16:55:24,459 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 16:55:28,768 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.31s | prompt_len=104 | rag_docs=3
+2026-04-27 16:55:28,769 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:57:21,718 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:59:21,462 | INFO     | pawpal_system | Schedule generated: 1 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 16:59:34,902 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.23s | prompt_len=104 | rag_docs=3
+2026-04-27 16:59:34,903 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 16:59:51,161 | WARNING  | pawpal.guardrails | Medical red-flag detected (vomit) in input: 'Mochi is vomitting Mochi (Shiba): dog, 3 years old, 1 tasks'
+2026-04-27 17:00:40,905 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 17:00:55,581 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=3.35s | prompt_len=109 | rag_docs=3
+2026-04-27 17:00:55,582 | INFO     | pawpal_system | LLM confidence score: 0.83
+2026-04-27 17:01:32,756 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=7.94s | prompt_len=148 | rag_docs=3
+2026-04-27 17:01:32,757 | INFO     | pawpal_system | LLM confidence score: 0.83
+2026-04-27 17:02:24,620 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=8.47s | prompt_len=161 | rag_docs=3
+2026-04-27 17:02:24,621 | INFO     | pawpal_system | LLM confidence score: 0.83
