@@ -122,3 +122,7 @@
 2026-04-27 00:39:53,987 | INFO     | pawpal_system | LLM confidence score: 0.81
 2026-04-27 00:39:53,987 | WARNING  | pawpal_system | Schedule conflict: Task 'Evening feeding' for Mochi (180m) cannot fit in remaining time. → Suggestion: Consider automating evening feeding with a timed dispenser to free up time. (confidence: 81%)
 2026-04-27 00:39:53,987 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 1 conflicts for owner 'Jordan'
+2026-04-27 01:47:33,502 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 01:47:33,502 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 01:47:37,574 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.07s | prompt_len=96 | rag_docs=3
+2026-04-27 01:47:37,574 | INFO     | pawpal_system | LLM confidence score: 0.90
