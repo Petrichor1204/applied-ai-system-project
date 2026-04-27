@@ -1,0 +1,100 @@
+[
+  {
+    "id": "dog_exercise_adult",
+    "title": "Adult Dog Exercise Needs",
+    "content": "Adult dogs generally need 30 to 60 minutes of exercise per day depending on breed and energy level. High-energy breeds like Border Collies or Huskies need 1 to 2 hours of vigorous exercise daily. Low-energy breeds like Basset Hounds or Bulldogs do well with two 20-minute walks. Missing a day of exercise can lead to restlessness, destructive behavior, and weight gain.",
+    "tags": ["dog", "exercise", "walk", "activity", "daily"],
+    "species": "dog"
+  },
+  {
+    "id": "dog_exercise_puppy",
+    "title": "Puppy Exercise Guidelines",
+    "content": "Puppies need controlled exercise to protect developing joints. A common rule is 5 minutes of exercise per month of age, up to twice daily. Over-exercising puppies, especially large breeds, can cause joint damage. Puppies under 12 months should avoid high-impact activities like jumping or running on hard surfaces for long periods.",
+    "tags": ["dog", "puppy", "exercise", "walk", "joint"],
+    "species": "dog"
+  },
+  {
+    "id": "dog_feeding_schedule",
+    "title": "Dog Feeding Schedule",
+    "content": "Adult dogs should be fed twice a day, roughly 12 hours apart. Puppies under 6 months need three to four meals daily. Always feed at consistent times to regulate digestion and prevent bloat, especially in large breeds. Fresh water should always be available. Avoid feeding immediately before or after vigorous exercise to reduce the risk of bloat.",
+    "tags": ["dog", "feeding", "meals", "food", "nutrition", "schedule"],
+    "species": "dog"
+  },
+  {
+    "id": "dog_grooming",
+    "title": "Dog Grooming Basics",
+    "content": "Dogs with short coats need brushing weekly; long-coated breeds like Collies need daily brushing to prevent mats. Bathing every 4 to 6 weeks is typical, though oily breeds may need more frequent baths. Nails should be trimmed every 3 to 4 weeks. Regular ear checks prevent infection, especially in floppy-eared breeds.",
+    "tags": ["dog", "grooming", "brushing", "bathing", "nails"],
+    "species": "dog"
+  },
+  {
+    "id": "cat_exercise_indoor",
+    "title": "Indoor Cat Exercise and Play",
+    "content": "Indoor cats need at least two 10 to 15-minute interactive play sessions daily to maintain a healthy weight and prevent boredom. Wand toys, laser pointers, and puzzle feeders stimulate hunting instincts. Without adequate play, cats may develop obesity, anxiety, or aggression. Senior cats still benefit from gentle daily play tailored to their pace.",
+    "tags": ["cat", "play", "exercise", "indoor", "activity", "boredom"],
+    "species": "cat"
+  },
+  {
+    "id": "cat_feeding",
+    "title": "Cat Feeding and Nutrition",
+    "content": "Cats are obligate carnivores and require animal protein at every meal. Adult cats should be fed twice daily with measured portions to prevent obesity. Free-feeding dry food is common but can lead to overeating. Wet food provides additional hydration, which is important since cats have a low thirst drive. Kittens need three to four meals per day.",
+    "tags": ["cat", "feeding", "food", "nutrition", "meals", "wet food", "dry food"],
+    "species": "cat"
+  },
+  {
+    "id": "cat_litter_box",
+    "title": "Litter Box Maintenance",
+    "content": "A clean litter box is essential. Scoop solids at least once daily. Fully change and wash the box with mild soap every 1 to 2 weeks. The rule of thumb is one litter box per cat plus one extra. Cats that avoid the litter box may have a medical issue or dislike the location, type of litter, or cleanliness level.",
+    "tags": ["cat", "litter", "litter box", "cleaning", "hygiene"],
+    "species": "cat"
+  },
+  {
+    "id": "cat_grooming",
+    "title": "Cat Grooming",
+    "content": "Short-haired cats self-groom effectively and need brushing only once or twice a week to reduce shedding. Long-haired breeds like Persians need daily brushing to prevent painful mats. Regular nail trims every 2 to 3 weeks prevent overgrowth. Dental care, including tooth brushing or dental treats, significantly reduces risk of periodontal disease.",
+    "tags": ["cat", "grooming", "brushing", "nails", "dental"],
+    "species": "cat"
+  },
+  {
+    "id": "general_vet_visits",
+    "title": "Routine Veterinary Care",
+    "content": "Adult dogs and cats should see a vet at least once a year for a wellness exam, vaccinations, and parasite prevention. Senior pets over 7 years old benefit from bi-annual checkups. Puppies and kittens need a series of vaccines starting at 6 to 8 weeks of age. Early detection of health issues through regular checkups can significantly extend a pet's life.",
+    "tags": ["vet", "health", "checkup", "vaccine", "wellness", "senior"],
+    "species": "all"
+  },
+  {
+    "id": "general_hydration",
+    "title": "Pet Hydration",
+    "content": "Dogs need approximately 1 ounce of water per pound of body weight each day. Cats, due to low thirst drive, often underdrink, which can cause urinary tract problems. Water fountains can encourage cats to drink more. Always provide fresh, clean water, especially after exercise or on hot days. Dehydration signs include sunken eyes, dry gums, and lethargy.",
+    "tags": ["water", "hydration", "health", "drinking"],
+    "species": "all"
+  },
+  {
+    "id": "dog_mental_stimulation",
+    "title": "Mental Stimulation for Dogs",
+    "content": "Dogs need mental challenges as much as physical exercise. Puzzle feeders, sniff walks, training sessions, and chew toys prevent boredom and reduce destructive behavior. Even 10 minutes of obedience training per day significantly improves behavior. Dogs who are mentally stimulated are generally calmer and less anxious.",
+    "tags": ["dog", "mental", "stimulation", "training", "puzzle", "boredom"],
+    "species": "dog"
+  },
+  {
+    "id": "dog_shiba_inu",
+    "title": "Shiba Inu Breed Care",
+    "content": "Shiba Inus are independent, alert, and high-energy dogs. They require at least 40 to 60 minutes of daily exercise. They are known for escaping enclosures, so a secure yard or leash is always necessary. Shibas are clean dogs that groom themselves like cats. They have a double coat that sheds heavily twice a year. Early socialization and firm, positive training are essential for this stubborn breed.",
+    "tags": ["dog", "shiba", "shiba inu", "breed", "exercise", "grooming"],
+    "species": "dog"
+  },
+  {
+    "id": "conflict_scheduling",
+    "title": "Resolving Pet Care Scheduling Conflicts",
+    "content": "When pet care tasks cannot all fit within an owner's available time window, prioritize health-critical tasks first: feeding, medication, and toileting always take precedence. Exercise tasks can sometimes be shortened rather than eliminated entirely; a 10-minute walk is better than no walk. Consider splitting long grooming sessions across two days to reduce daily time burden. Automating feeding with a timed dispenser can free time for higher-engagement tasks.",
+    "tags": ["conflict", "schedule", "time", "priority", "feeding", "exercise"],
+    "species": "all"
+  },
+  {
+    "id": "skipped_exercise_recovery",
+    "title": "Handling Skipped Exercise Sessions",
+    "content": "If a dog misses a walk or exercise session due to weather or the owner's schedule, try to compensate with indoor activities like fetch or obedience training. For cats, an extra interactive play session helps. Avoid doubling exercise intensity immediately after a missed day, especially for senior or overweight pets. Consistency matters more than duration; short regular sessions are better than sporadic long ones.",
+    "tags": ["skipped", "missed", "exercise", "walk", "recovery", "compensation"],
+    "species": "all"
+  }
+]

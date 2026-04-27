@@ -103,7 +103,7 @@ This project is for educational purposes. See LICENSE for details.
 
 Run the test suite with:
 ```bash
-python -m pytest
+.venv/bin/python -m pytest tests/test_pawpal.py -q
 ```
 
 The tests cover critical scheduling behaviors including:
@@ -113,7 +113,16 @@ The tests cover critical scheduling behaviors including:
 - Conflict detection (warnings for tasks scheduled at the same time)
 - Sorting correctness (tasks returned in chronological order by start time)
 
-**Confidence Level**: ⭐⭐⭐⭐⭐ (5/5 stars) - All core scheduling functionality is thoroughly tested and passing, providing high confidence in the system's reliability for pet care planning.
+## AI Reliability Evidence
+
+PawPal+ includes several checks so the AI path can be measured instead of only appearing to work:
+
+- **Automated tests:** `tests/test_pawpal.py` verifies RAG retrieval, confidence scoring, fallback behavior when `GEMINI_API_KEY` is missing, plain-text LLM responses, conflict suggestions, and log-file creation.
+- **Confidence scoring:** every AI helper stores a confidence score from `0.0` to `1.0`; normal LLM prose uses retrieved-document relevance, while fallback responses receive lower confidence.
+- **Logging and error handling:** LLM calls log model name, elapsed time, prompt length, retrieved document count, confidence, and fallback failures to `logs/pawpal.log`.
+- **Human evaluation:** sample outputs should be reviewed for usefulness, factual grounding in `pet_care_kb.json`, and whether the advice is concise enough for a pet owner to act on.
+
+Latest local reliability run: **20 out of 20 tests passed**. The AI fallback path worked when the Gemini API key was missing, plain-text AI output was accepted without JSON parsing warnings, and confidence scores stayed inside the expected `0.0` to `1.0` range. Reliability is strongest when the knowledge base has relevant context; confidence is intentionally lower when context or API access is missing.
 
 **Demo**
 ![alt text](<Screenshot 2026-03-31 at 11.04.08 AM.png>)

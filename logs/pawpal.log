@@ -1,0 +1,124 @@
+2026-04-26 20:55:32,641 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 20:55:32,641 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 20:55:32,641 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 20:55:46,871 | INFO     | pawpal_system | Schedule generated: 1 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:02:25,322 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:02:25,325 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:04:08,700 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:04:33,618 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:11:27,573 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'J'
+2026-04-26 22:12:07,535 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'J'
+2026-04-26 22:12:25,424 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'J'
+2026-04-26 22:13:46,430 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 22:13:46,432 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:13:46,432 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:14:20,695 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:14:20,697 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:16:14,129 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:16:51,864 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:18:25,118 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:19:41,584 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'J'
+2026-04-26 22:19:41,584 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'J'
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:19:59,414 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | Schedule conflict: Task 'Play time' for Mochi (90m) cannot fit in remaining time. → Suggestion: Consider shortening lower-priority tasks or splitting grooming sessions across two days to free up time for essential care. (confidence: 40%)
+2026-04-26 22:19:59,414 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 1 conflicts for owner 'J'
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:19:59,414 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | Schedule conflict: Task 'Grooming session' for Mochi (120m) cannot fit in remaining time. → Suggestion: Consider shortening lower-priority tasks or splitting grooming sessions across two days to free up time for essential care. (confidence: 40%)
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:19:59,414 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:19:59,414 | WARNING  | pawpal_system | Schedule conflict: Task 'Feeding' for Mochi (20m) cannot fit in remaining time. → Suggestion: Consider shortening lower-priority tasks or splitting grooming sessions across two days to free up time for essential care. (confidence: 40%)
+2026-04-26 22:19:59,414 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 2 conflicts for owner 'J'
+2026-04-26 22:43:02,006 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 22:43:02,008 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:43:02,009 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:45:06,094 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:45:39,377 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:46:21,237 | INFO     | pawpal_system | Schedule generated: 5 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:46:58,345 | INFO     | pawpal_system | Schedule generated: 6 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:48:57,532 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 22:48:57,533 | WARNING  | pawpal_system | LLM call FAILED (0.00s): GEMINI_API_KEY not set — falling back to rule-based response.
+2026-04-26 22:48:57,533 | INFO     | pawpal_system | LLM confidence score: 0.40
+2026-04-26 22:50:41,217 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:51:19,011 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 22:54:31,349 | WARNING  | pawpal_system | Could not initialise RAG retriever: Knowledge base not found: /Users/abrokwa/applied-ai-system-final/knowledge/pet_care_kb.json
+2026-04-26 22:58:01,772 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-26 22:58:01,773 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-26 23:28:16,973 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:29:09,479 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-26 23:29:09,481 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-26 23:29:15,478 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=6.00s | prompt_len=127 | rag_docs=3
+2026-04-26 23:29:15,478 | WARNING  | pawpal_system | LLM response not valid JSON (Expecting value: line 1 column 1 (char 0)); using raw text.
+2026-04-26 23:29:15,479 | INFO     | pawpal_system | LLM confidence score: 0.50
+2026-04-26 23:32:17,818 | INFO     | pawpal_system | Schedule generated: 5 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:35:29,216 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-26 23:35:29,217 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-26 23:35:33,428 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.21s | prompt_len=96 | rag_docs=3
+2026-04-26 23:35:33,429 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:46:18,568 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:46:36,585 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:48:24,983 | INFO     | pawpal_system | Schedule generated: 6 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:48:32,703 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:49:42,167 | INFO     | pawpal_system | Schedule generated: 2 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:52:37,803 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-26 23:52:37,803 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-26 23:52:41,900 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.10s | prompt_len=96 | rag_docs=3
+2026-04-26 23:52:41,900 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:53:38,226 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.91s | prompt_len=104 | rag_docs=3
+2026-04-26 23:53:38,228 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:55:03,097 | INFO     | pawpal_system | Schedule generated: 5 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-26 23:55:33,508 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=3.41s | prompt_len=205 | rag_docs=3
+2026-04-26 23:55:33,509 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:55:33,510 | WARNING  | pawpal_system | Schedule conflict: Task 'Morning walk' for Mochi (30m) cannot fit in remaining time. → Suggestion: Shorten the morning walk; a brief walk is better than none, especially after previous skips. (confidence: 90%)
+2026-04-26 23:55:35,672 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=2.16s | prompt_len=205 | rag_docs=3
+2026-04-26 23:55:35,672 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:55:35,672 | WARNING  | pawpal_system | Schedule conflict: Task 'Morning walk' for Mochi (30m) cannot fit in remaining time. → Suggestion: Shorten Mochi's morning walk to fit the available time; a brief walk is better than no walk at all. (confidence: 90%)
+2026-04-26 23:55:38,389 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=2.72s | prompt_len=205 | rag_docs=3
+2026-04-26 23:55:38,389 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:55:38,389 | WARNING  | pawpal_system | Schedule conflict: Task 'Evening play' for Mochi (25m) cannot fit in remaining time. → Suggestion: Shorten the 'Evening play' session for Mochi; some play is better than no play, especially with previously skipped walks. (confidence: 90%)
+2026-04-26 23:55:42,217 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=3.83s | prompt_len=208 | rag_docs=3
+2026-04-26 23:55:42,219 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:55:42,219 | WARNING  | pawpal_system | Schedule conflict: Task 'Litter box clean' for Nori (10m) cannot fit in remaining time. → Suggestion: Prioritize the 'Litter box clean' as toileting tasks always take precedence when scheduling conflicts arise. (confidence: 90%)
+2026-04-26 23:55:48,335 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=6.12s | prompt_len=200 | rag_docs=3
+2026-04-26 23:55:48,336 | WARNING  | pawpal_system | LLM response not valid JSON (Expecting value: line 1 column 1 (char 0)); using raw text.
+2026-04-26 23:55:48,336 | INFO     | pawpal_system | LLM confidence score: 0.50
+2026-04-26 23:55:48,337 | WARNING  | pawpal_system | Schedule conflict: Task 'Feeding' for Mochi (15m) cannot fit in remaining time. → Suggestion: ```json
+{
+"response": "Automate feeding with a timed dispenser to free up time, ensuring this health-critical task is completed.",
+"confidence": 0.8
+}
+``` (confidence: 50%)
+2026-04-26 23:55:48,337 | INFO     | pawpal_system | Schedule generated: 0 tasks placed, 5 conflicts for owner 'Jordan'
+2026-04-26 23:56:50,271 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.76s | prompt_len=205 | rag_docs=3
+2026-04-26 23:56:50,273 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:56:50,274 | WARNING  | pawpal_system | Schedule conflict: Task 'Evening play' for Mochi (25m) cannot fit in remaining time. → Suggestion: Shorten Mochi's Evening play session; a shorter play session is better than skipping it entirely. (confidence: 90%)
+2026-04-26 23:56:56,660 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=6.39s | prompt_len=200 | rag_docs=3
+2026-04-26 23:56:56,661 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:56:56,661 | WARNING  | pawpal_system | Schedule conflict: Task 'Feeding' for Mochi (15m) cannot fit in remaining time. → Suggestion: Automate feeding with a timed dispenser to free up time for this critical task. (confidence: 90%)
+2026-04-26 23:56:56,661 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 2 conflicts for owner 'Jordan'
+2026-04-26 23:57:26,706 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=3.48s | prompt_len=205 | rag_docs=3
+2026-04-26 23:57:26,707 | INFO     | pawpal_system | LLM confidence score: 0.80
+2026-04-26 23:57:26,707 | WARNING  | pawpal_system | Schedule conflict: Task 'Evening play' for Mochi (25m) cannot fit in remaining time. → Suggestion: Shorten the 'Evening play' session. (confidence: 80%)
+2026-04-26 23:57:33,875 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=7.17s | prompt_len=200 | rag_docs=3
+2026-04-26 23:57:33,875 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-26 23:57:33,875 | WARNING  | pawpal_system | Schedule conflict: Task 'Feeding' for Mochi (15m) cannot fit in remaining time. → Suggestion: Prioritize Mochi's feeding; shorten or skip other non-critical tasks, like exercise, to ensure it fits. (confidence: 90%)
+2026-04-26 23:57:33,875 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 2 conflicts for owner 'Jordan'
+2026-04-27 00:35:29,617 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 00:35:29,617 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 00:35:33,970 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=4.35s | prompt_len=96 | rag_docs=3
+2026-04-27 00:35:33,971 | WARNING  | pawpal_system | LLM response not valid JSON (Expecting value: line 1 column 1 (char 0)); using raw text.
+2026-04-27 00:35:33,971 | INFO     | pawpal_system | LLM confidence score: 0.50
+2026-04-27 00:37:27,668 | INFO     | rag_retriever | RAG index built: 14 documents, vocabulary size 369
+2026-04-27 00:37:27,668 | INFO     | pawpal_system | RAG retriever initialised from /Users/abrokwa/applied-ai-system-final/pet_care_kb.json
+2026-04-27 00:37:31,167 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=3.50s | prompt_len=96 | rag_docs=3
+2026-04-27 00:37:31,168 | INFO     | pawpal_system | LLM confidence score: 0.90
+2026-04-27 00:38:15,846 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 00:38:31,537 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 00:39:22,838 | INFO     | pawpal_system | Schedule generated: 3 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 00:39:39,396 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 0 conflicts for owner 'Jordan'
+2026-04-27 00:39:53,986 | INFO     | pawpal_system | LLM call OK | model=gemini-2.5-flash | elapsed=1.92s | prompt_len=187 | rag_docs=2
+2026-04-27 00:39:53,987 | INFO     | pawpal_system | LLM confidence score: 0.81
+2026-04-27 00:39:53,987 | WARNING  | pawpal_system | Schedule conflict: Task 'Evening feeding' for Mochi (180m) cannot fit in remaining time. → Suggestion: Consider automating evening feeding with a timed dispenser to free up time. (confidence: 81%)
+2026-04-27 00:39:53,987 | INFO     | pawpal_system | Schedule generated: 4 tasks placed, 1 conflicts for owner 'Jordan'

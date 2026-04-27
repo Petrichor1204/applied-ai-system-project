@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+from datetime import datetime
 from pawpal_system import Owner, Pet, Task, Scheduler
 import streamlit as st
 
@@ -24,6 +28,38 @@ but **it does not implement the project logic**. Your job is to design the syste
 
 Use this app as your interactive demo once your backend classes/functions exist.
 """
+)
+
+st.subheader("Owner Availability")
+col1, col2 = st.columns(2)
+with col1:
+    available_start = st.time_input(
+        "Available start",
+        value=datetime.strptime(owner.available_start, "%H:%M").time(),
+        key="available_start",
+    )
+with col2:
+    available_end = st.time_input(
+        "Available end",
+        value=datetime.strptime(owner.available_end, "%H:%M").time(),
+        key="available_end",
+    )
+
+if st.button("Update availability"):
+    try:
+        owner.set_availability(
+            available_start.strftime("%H:%M"),
+            available_end.strftime("%H:%M"),
+        )
+        st.success(f"Updated availability to {owner.available_start} - {owner.available_end}.")
+    except ValueError as exc:
+        st.error(str(exc))
+
+st.markdown(
+    f"**Current schedule window:** {owner.available_start} - {owner.available_end}"
+)
+st.info(
+    "If you want to see conflict warnings, make the window smaller or add more total task minutes."
 )
 
 with st.expander("Scenario", expanded=True):
@@ -68,6 +104,19 @@ else:
 
 st.divider()
 
+st.subheader("Pet Care Tips")
+if owner.pets:
+    tip_pet = st.selectbox("Get tips for pet", [pet.name for pet in owner.pets], key="tip_pet")
+    if st.button("Get pet tips"):
+        selected_pet = owner.get_pet(tip_pet)
+        if selected_pet:
+            tips = scheduler.get_pet_tips(selected_pet)
+            st.info(tips)
+else:
+    st.warning("Add a pet to get care tips.")
+
+st.divider()
+
 st.subheader("Add a Task")
 if not owner.pets:
     st.warning("Add a pet before adding tasks.")
@@ -90,9 +139,19 @@ else:
 
 st.divider()
 
+st.subheader("Daily Log & Schedule Adjustment")
+daily_log = st.text_area(
+    "Daily log (e.g., 'It is 2 PM, and the 1 PM walk was skipped because of a thunderstorm.')",
+    value="",
+    key="daily_log",
+    help="Describe what has happened so far today. The scheduler will re-analyze your remaining tasks based on this."
+)
+
+st.divider()
+
 st.subheader("Build Schedule")
 if st.button("Generate schedule"):
-    plan, conflicts = scheduler.generate_schedule()
+    plan, conflicts = scheduler.generate_schedule(daily_log=daily_log if daily_log else None)
     if not plan:
         st.info("No schedule was generated (no tasks or no available time).")
     else:

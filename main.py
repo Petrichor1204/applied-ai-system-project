@@ -24,11 +24,11 @@ def main():
     scheduler.add_task(task3, pet_name="Nori")
     scheduler.add_task(task4, pet_name="Nori")
 
-    today_plan = scheduler.generate_schedule()
+    plan, conflicts = scheduler.generate_schedule()
 
     print("Today's Schedule")
     print("-----------------")
-    for entry in today_plan:
+    for entry in plan:
         print(
             f"{entry['start']} - {entry['end']}: {entry['pet']} -> {entry['task'].title} "
             f"[{entry['priority']}]"
